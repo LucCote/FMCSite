@@ -1,0 +1,207 @@
+<!DOCTYPE HTML>
+<html>
+<meta charset="utf-8">
+<style>
+    body, html {
+        height: 100%;
+    }
+    body{
+        background-color: slategray;
+    }
+
+    .parallax {
+        /* The image used */
+        background-image: url("https://www.gwinnettpl.org/wp-content/uploads/2016/12/film-video-movie.jpg");
+
+        /* Full height */
+        height: 100%;
+
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .parallax2 {
+        /* The image used */
+        background-image: url("https://s3.amazonaws.com/pbblogassets/uploads/2015/09/Film-Lingo-865x505.jpg");
+
+        /* Full height */
+        height: 100%;
+
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .active {
+        background-color: darkslategray;
+    }
+
+    h1{
+        color: grey;
+        text-align: center;
+        padding: 25px 0px 0px 0px;
+        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        font-size: 60px;
+
+    }
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0 0 0 0;
+        overflow: hidden;
+        border: solid red;
+        align-content: center;
+        position: fixed;
+        top: 0;
+        width: 98.5%;
+        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        background-color: darkslategray;
+    }
+
+    li {
+        float: left;
+    }
+
+    li a {
+        display: block;
+        color: red;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+
+    }
+    li a:hover {
+        background-color: dimgray;
+    }
+    #WidgetTable{
+        width: 100%;
+        text-align: center;
+        border: solid thin gainsboro;
+        background-color: white;
+    }
+    a{
+        color: black;
+        text-decoration: none;
+    }
+    h2 {
+        color: red;
+    }
+    .teamPreview{
+        width: 15%;
+        height: 15%;
+        padding: 3% 3% 3% 3%;
+    }
+    #team{
+        text-align: center;
+    }
+    #about{
+        text-align: center;
+    }
+    #contact{
+        text-align: center;
+        color: gray;
+    }
+    input{
+        background-color: white;
+        color: gray;
+        border: solid gray;
+    }
+    textarea{
+        background-color: white;
+        color: gray;
+        border: solid gray;
+    }
+
+    @media only screen and (max-device-width: 1024px) {
+        .parallax {
+            background-attachment: scroll;
+        }
+        .parallax2{
+            background-attachment: scroll;
+        }
+    }
+    span{
+        color: red;
+    }
+    .span2{
+        color: orange;
+    }
+    .span3{
+        color: blue;
+    }
+    .menuImg{
+        height: 15px;
+    }
+    .right{
+        float: right;
+    }
+
+
+</style>
+<ul>
+    <li><a href="#title" class="active"><span>F</span><span class="span2">M</span><span class="span3">C</span></a></li>
+    <li><a href="#about">关于我们</a></li>
+    <li><a href="#contact">联系我们</a></li>
+    <li><a href="#team">团队</a></li>
+    <li><a href="#twitter">社交网站</a></li>
+    <li><a href="projects.html">案例</a></li>
+    <li class="right"><a href="index.html"><img src="china-flag.jpg" class="menuImg"></a></li>
+</ul>
+<h1 id="title"><span>Funny</span><span class="span2"> Movie</span><span class="span3"> Corporation</span></h1>
+<div class="parallax">
+</div>
+<div id="about">
+    <h1><span>关于我们</span></h1>
+    <p>This is Fmc We are a company Sample text here</p><br><br><br><br>
+</div>
+<div class="parallax2"></div>
+<div id="contact">
+    <h1><span class="span2">联系我们</span></h1>
+    <form action="sendMail.php">
+        <span>姓名:</span><br>
+        <input type="text" name="Name"><br>
+        <span class="span2">Email:</span><br>
+        <input type="text" name="Email"><br>
+        <span class="span3">留言</span><br>
+        <textarea name="message" rows="10" cols="30"></textarea><br>
+        <input type="submit" value="Submit"><br>
+    </form>
+    <br>
+    <br>
+</div>
+<div class="parallax"></div>
+<div id="team">
+    <h1><span class="span3">团队</span></h1>
+    <a href="team.html"><img src="CEO.jpeg" class="teamPreview"></a>
+    <a href="team.html"><img src="CEO.jpeg" class="teamPreview"></a>
+    <a href="team.html"><img src="CEO.jpeg" class="teamPreview"></a>
+    <a href="team.html"><img src="CEO.jpeg" class="teamPreview"></a>
+    <a href="team.html"><img src="CEO.jpeg" class="teamPreview"></a>
+    <a href="team.html"><img src="CEO.jpeg" class="teamPreview"></a>
+    <a href="team.html"><img src="CEO.jpeg" class="teamPreview"></a>
+    <a href="team.html"><img src="CEO.jpeg" class="teamPreview"></a>
+    <a href="team.html"><img src="CEO.jpeg" class="teamPreview"></a>
+    <a href="team.html"><img src="CEO.jpeg" class="teamPreview"></a>
+    <a href="team.html"><img src="CEO.jpeg" class="teamPreview"></a>
+    <a href="team.html"><img src="CEO.jpeg" class="teamPreview"></a>
+</div>
+<div class="parallax2"></div>
+<div id="twitter">
+    <table id="WidgetTable">
+        <tr>
+            <td>
+                <h1><span>Follow Us On Twitter</span></h1>
+            </td>
+        </tr>
+
+        <tr>
+            <td><a class="twitter-timeline" href="https://twitter.com/funnymoviecorp" data-chrome="transparent" width="80%">Tweets by FMC</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></td>
+        </tr>
+
+    </table>
+</div>
+
+</html>
